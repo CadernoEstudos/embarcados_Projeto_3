@@ -1,3 +1,2 @@
-cmake_minimum_required(VERSION 3.16)
-include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(casa_inteligente)
+idf_component_register(SRCS "app_main.c" "app_driver.c"
+                       INCLUDE_DIRS ".")
